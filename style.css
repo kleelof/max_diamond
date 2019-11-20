@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+#wrapper{
+    width: 760px;
+    margin: 0 auto;
+}
+
+#max{
+    position: absolute;
+}
+#max img{
+    width: 40px;
+    height: 40px;
+}
+
+#score_board{
+    height: 50px;
+    width: 756px;
+    background-color: lightgray;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: bold;
+    border: 2px blue solid;
+}
+
+.score_board_panel{
+    width: 50%;
+}
+
+
+.square{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wall{
+    background: url("images/brick_wall.jpeg")
+}
+
+.blank{
+    background-color: black;
+}
+
+.diamond_square{
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: black;
+}
+
+.blue_diamond{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.rainbow_diamond{
+    margin-top: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+.monster{
+    display: inline-block;
+    position: absolute;
+}
+.monster img{
+    width: 40px;
+    height: 40px;
+}
+
+.look_up{
+    transform: rotate(-90deg);
+}
