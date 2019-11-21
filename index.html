@@ -9,18 +9,30 @@
 <body>
     <div id="wrapper">
         <div id="score_board">
-            <div id="score" class="score_board_panel">
-
-            </div>
-            <div id="pacman_count" class="score_board_panel">
-
-            </div>
+            <div id="score" class="score_board_panel"></div>
+            <div id="lives" class="score_board_panel"> </div>
         </div>
         <div id="game_board"></div>
-        <div id="max">
-            <img src="images/max.png">
+        <div id="max"> <img src="images/max.png"> </div>
+        <div id="monsters">
+            <div id="monster_0" class="monster"><img src="images/monster_0.png"></div>
+            <div id="monster_1" class="monster"><img src="images/monster_1.png"></div>
+            <div id="monster_2" class="monster"><img src="images/monster_2.png"></div>
         </div>
-        <div id="monsters"></div>
+        <div id="start_splash_screen" class="splash_screen">
+            <img src="images/max_diamond_logo.png">
+        </div>
+        <div id="level_screen" class="splash_screen">
+            Level:
+            <div id="level_text"></div>
+        </div>
+        <div id="level_cleared" class="splash_screen">
+            LEVEL CLEARED!
+            GOOD JOB!
+        </div>
+        <div id="game_over" class="splash_screen">
+            GAME OVER!!
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -22,21 +22,60 @@ body{
     height: 40px;
 }
 
+.max_lives{
+    margin: 0 20px;
+}
+
 #score_board{
     height: 50px;
     width: 756px;
     background-color: lightgray;
     text-align: center;
-    vertical-align: middle;
     font-size: 50px;
     font-weight: bold;
     border: 2px blue solid;
 }
 
 .score_board_panel{
-    width: 50%;
+    display: inline-block;
+    width: 48%;
 }
 
+.splash_screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    visibility: hidden;
+}
+
+#start_splash_screen img{
+    margin-top: 150px;
+    width: 500px;
+}
+
+#level_screen{
+    padding-top: 200px;
+}
+
+#level_text{
+    width: 100%;
+}
+
+#level_cleared{
+    padding-top: 200px;
+}
+
+#game_over{
+    padding-top: 200px;
+}
 
 .square{
     width: 40px;
@@ -73,7 +112,6 @@ body{
 }
 
 .monster{
-    display: inline-block;
     position: absolute;
 }
 .monster img{
