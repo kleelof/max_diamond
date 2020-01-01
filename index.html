@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>Max Diamond Maze Master</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/EventHandler.js"></script>
+    <script src="script/ScoreBoard.js"></script>
+    <script src="script/MovingThing.js"></script>
+    <script src="script/Monster.js"></script>
+    <script src="script/Hero.js"></script>
+    <script src="script/GameBoard.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -23,17 +29,24 @@
             <img src="images/max_diamond_logo.png">
         </div>
         <div id="level_screen" class="splash_screen">
-            Level:
-            <div id="level_text"></div>
+            <div class="inner">
+                Level
+                <div id="level_text"></div>
+            </div>
         </div>
         <div id="level_cleared" class="splash_screen">
-            LEVEL CLEARED!
-            GOOD JOB!
+            <div class="inner">
+                LEVEL CLEARED!
+            </div>
         </div>
         <div id="game_over" class="splash_screen">
-            GAME OVER!!
+            <div class="inner">
+                <p>GAME OVER</p>
+                <div class="play_again" onclick="start();">Play Again</div>
+            </div>
+
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
